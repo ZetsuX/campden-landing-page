@@ -37,22 +37,58 @@ nav .title img {
 }
 
 nav .navmenu {
-    display: inline;
-    padding: 1rem;
+    margin: 1rem;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.9);
     font-weight: bold;
-    -webkit-transition: color 0.3s linear;
-    -ms-transition: color 0.3s linear;
-    transition: color 0.3s linear;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
 }
 
-nav .navmenu:hover {
-    color: rgba(255, 255, 255, 0.7);
-    -webkit-transition: 0.3s linear;
-    -ms-transition: 0.3s linear;
-    transition: 0.3s linear;
+nav .navmenu::before,
+nav .navmenu::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
 }
+nav .navmenu::before {
+    background-color: rgba(121, 152, 193, 0.9);
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+nav .navmenu::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: rgba(121, 152, 193, 0.9);
+}
+
+nav .navmenu:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+nav .navmenu:hover::after {
+    transform: translate3d(0, 0, 0);
+}
+
+nav .navmenu span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+nav .navmenu:hover span {
+    transform: translate3d(-200%, 0, 0);
+}
+  
 
 nav .login {
     padding-right: 2.5%;
