@@ -59,7 +59,7 @@ nav .navmenu::before {
     bottom: 0;
     transform-origin: 100% 50%;
     transform: scaleX(0);
-    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
 }
 nav .navmenu::after {
     content: attr(data-replace);
@@ -67,7 +67,7 @@ nav .navmenu::after {
     top: 0;
     transform-origin: 100% 50%;
     transform: translate3d(200%, 0, 0);
-    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
     color: rgba(121, 152, 193, 0.9);
 }
 
@@ -82,7 +82,7 @@ nav .navmenu:hover::after {
 
 nav .navmenu span {
     display: inline-block;
-    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 nav .navmenu:hover span {
@@ -104,16 +104,16 @@ nav .navbutton {
     color: rgba(255, 255, 255, 0.9);
     font-weight: bold;
     border: 2px solid rgba(255, 255, 255, 0);
-    -webkit-transition: border 0.5s linear;
-    -ms-transition: border 0.5s linear;
-    transition: border 0.5s linear;
+    -webkit-transition: border 0.4s linear;
+    -ms-transition: border 0.4s linear;
+    transition: border 0.4s linear;
 }
 
 nav .navbutton:hover {
     border: 2px solid rgba(255, 255, 255, 0.7);
-    -webkit-transition: 0.5s linear;
-    -ms-transition: 0.5s linear;
-    transition: 0.5s linear;
+    -webkit-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    transition: 0.4s linear;
 }
 
 .startcontainer {
@@ -156,32 +156,32 @@ nav .navbutton:hover {
     border:2px solid rgba(255, 255, 255, 0.7);
     border-radius: 30px;
     padding: 1rem;
-    -webkit-transition: background-color 0.5s linear, transform 0.5s linear;
-    -ms-transition: background-color 0.5s linear, transform 0.5s linear;
-    transition: background-color 0.5s linear, transform 0.5s linear;
+    -webkit-transition: background-color 0.4s linear, transform 0.4s linear;
+    -ms-transition: background-color 0.4s linear, transform 0.4s linear;
+    transition: background-color 0.4s linear, transform 0.4s linear;
 }
 
 .btnbox #wcbutton {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
     font-size: 150%;
-    -webkit-transition: color 0.5s linear;
-    -ms-transition: color 0.5s linear;
-    transition: color 0.5s linear;
+    -webkit-transition: color 0.4s linear;
+    -ms-transition: color 0.4s linear;
+    transition: color 0.4s linear;
 }
 
 .btnbox:hover {
     border: 2px solid rgba(255, 255, 255, 0.7);
     background-color: rgba(255, 255, 255, 0.2);
     transform: scale(1.1) translateY(10%);
-    -webkit-transition: 0.5s linear;
-    -ms-transition: 0.5s linear;
-    transition: 0.5s linear;
+    -webkit-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    transition: 0.4s linear;
 }
 
 .btnbox:hover #wcbutton {
     color: whitesmoke;
-    -webkit-transition: 0.5s linear;
-    -ms-transition: 0.5s linear;
-    transition: 0.5s linear;
+    -webkit-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    transition: 0.4s linear;
 }
