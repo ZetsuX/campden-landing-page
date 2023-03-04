@@ -30,10 +30,12 @@ nav .title {
 nav .title .titleitem {
     display: inline;
     margin-left: 0.5rem;
+    font-size: 1.7rem;
 }
 
 nav .title img {
     width: 52px;
+    transform: translateY(1.5px);
 }
 
 nav .navmenu {
@@ -54,7 +56,7 @@ nav .navmenu::after {
     left: 0;
 }
 nav .navmenu::before {
-    background-color: rgba(121, 152, 193, 0.9);
+    background-color: rgba(153, 192, 230, 0.9);
     height: 2px;
     bottom: 0;
     transform-origin: 100% 50%;
@@ -68,7 +70,7 @@ nav .navmenu::after {
     transform-origin: 100% 50%;
     transform: translate3d(200%, 0, 0);
     transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
-    color: rgba(121, 152, 193, 0.9);
+    color: rgba(153, 192, 230, 0.9);
 }
 
 nav .navmenu:hover::before {
@@ -129,6 +131,7 @@ nav .navbutton:hover {
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
     transform: translateY(7%);
+    padding-right: 1rem;
 }
 
 .getstarted .welcome {
@@ -140,7 +143,7 @@ nav .navbutton:hover {
 }
 
 .getstarted .welcome span {
-    color: rgba(121, 152, 193, 0.9)
+    color: rgba(153, 192, 230, 0.9)
 }
 
 .getstarted .welcomebutton {
@@ -184,4 +187,140 @@ nav .navbutton:hover {
     -webkit-transition: 0.4s linear;
     -ms-transition: 0.4s linear;
     transition: 0.4s linear;
+}
+
+#catalog {
+    height: 100vh;
+    background-color: RGB(218, 218, 218);
+    display: block;
+}
+
+#catalog .ctitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15%;
+}
+
+.ctitle-text {
+    color: rgb(10, 17, 38);
+    font-size: 250%;
+}
+
+#catalog .cnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.cnav-btn {
+    margin: 0.8rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: rgb(10, 17, 38);
+    border: 2px solid rgb(10, 17, 38);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    -webkit-transition: color 0.4s linear, border 0.4s linear, transform 0.4s linear;
+    -ms-transition: color 0.4s linear, border 0.4s linear, transform 0.4s linear;
+    transition: color 0.4s linear, border 0.4s linear, transform 0.4s linear;
+}
+
+.cnav-btn:hover {
+    color: rgb(45, 73, 136);
+    border: 2px solid rgb(45, 73, 136);
+    transform: scale(1.05);
+    -webkit-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    transition: 0.4s linear;
+}
+
+.cnav-btn-active {
+    color: rgb(45, 73, 136);
+    border: 2px solid rgb(45, 73, 136);
+    transform: scale(1.1)
+}
+
+#catalog .ccards {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#catalog .crow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+#catalog .cpaging a {
+    font-size: 300%;
+    margin: 0rem 1rem;
+    color :rgb(10, 17, 38);
+    text-decoration: none;
+    -webkit-transition: color 0.3s linear;
+    -ms-transition: color 0.3s linear;
+    transition: color 0.3s linear;
+}
+
+#catalog .cpaging a:hover {
+    color:rgb(45, 73, 136);
+    -webkit-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+#catalog .crow .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+    transition: 0.3s;
+    margin: 1rem;
+}
+
+#catalog .crow .card img {
+    border-radius: 5px 5px 0 0;
+}
+
+#catalog .crow .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#catalog .crow .container {
+    padding: 15px 16px;
+}
+
+.ccategory {
+    position : absolute;
+    left: 4%;
+    top: 4%;
+}
+
+.ccategory a {
+    text-decoration: none;
+    color: rgb(10, 17, 38);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.4rem 0.6rem;
+    border-radius: 11px;
+}
+
+.ccategory a:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.citem-review {
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.citem-review span {
+    font-weight: lighter;
 }
