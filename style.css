@@ -33,7 +33,7 @@ nav .title .titleitem {
 }
 
 nav .title img {
-    width: 62px;
+    width: 52px;
 }
 
 nav .navmenu {
@@ -63,7 +63,7 @@ nav .navbutton {
     font-size: 110%;
     border-radius: 5px;
     background-color: rgba(78, 96, 116, 0.3);
-    padding: 1rem;
+    padding: 0.85rem;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.9);
     font-weight: bold;
