@@ -15,6 +15,7 @@
 #navbar {
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
 nav {
@@ -98,7 +99,6 @@ nav .navmenu:hover span {
     transform: translate3d(-200%, 0, 0);
 }
   
-
 nav .login {
     padding-right: 2.5%;
 }
@@ -202,7 +202,7 @@ nav .navbutton:hover {
     display: block;
 }
 
-#catalog .ctitle {
+.stitle {
     display: flex;
     justify-content: center;
     align-items: last baseline;
@@ -210,7 +210,7 @@ nav .navbutton:hover {
     margin-bottom: 2rem;
 }
 
-.ctitle-text {
+.stitle-text {
     color: rgb(10, 17, 38);
     font-size: 250%;
 }
@@ -346,4 +346,99 @@ nav .navbutton:hover {
 
 .citem-review span {
     font-weight: lighter;
+}
+
+#review {
+    height: 100vh;
+    background-color: RGB(218, 218, 218);
+    display: block;
+}
+
+.rcards {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.rrow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+.r-card img {
+	width: 100%;
+	height: auto;
+}
+
+.r-card {
+	width: auto;
+	min-width: 30%;
+    max-width: 40%;
+    height: auto;
+	background: #f5f5f5;
+	color: #272727;
+	padding: 30px;
+	box-shadow: 0px 7px 24px rgba(100, 100, 100, 0.4);
+    border-radius: 7px;
+}
+
+.r-card__text p {
+	font-size: 30px;
+	font-family: "Vollkorn", serif;
+	font-weight: 400;
+	color: #3f3f55;
+	text-align: left;
+}
+
+.r-card__text p::after {
+	content: "\201D";
+	display: inline;
+	color: #999;
+}
+
+.r-card__text p::before {
+	content: "\201C";
+	display: inline;
+	color: #999;
+}
+
+.r-card__user {
+	display: flex;
+	flex-direction: row;
+	padding-top: 24px;
+	margin-top: 12px;
+	align-items: center;
+}
+.r-card__userImage {
+	width: 42px;
+	height: 42px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.r-card__userImage img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.r-card__userInfo {
+	display: flex;
+	flex-direction: column;
+	margin-left: 16px;
+}
+
+.r-card__userInfo span:nth-child(1) {
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 14px;
+	color: #3f3f55;
+}
+.r-card__userInfo span:nth-child(2) {
+	color: #adada6;
+	font-family: sans-serif;
+	font-size: 12px;
+	margin-top: 2px;
 }
