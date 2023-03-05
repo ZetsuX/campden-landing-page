@@ -11,25 +11,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="herosection">
-        <nav>
-            <div class="title">
-                <img src="assets/tentLogo.png" class="titleitem">
-                <h1 class="titleitem">Campden</h1>
-            </div>
-
-            <div class="navbar">
-                <a href="" class="navmenu" data-replace="Home"><span>Home</span></a>
-                <a href="" class="navmenu" data-replace="Products"><span>Products</span></a>
-                <a href="" class="navmenu" data-replace="Reviews"><span>Reviews</span></a>
-                <a href="" class="navmenu" data-replace="About"><span>About</span></a>
-            </div>
-
-            <div class="login">
-                <a href="" class="navbutton">Login</a>
-                <a href="" class="navbutton">Register</a>
-            </div>
-        </nav>
+    <section id="home">
+        <div>
+            <nav id="navbar">
+                <div class="title">
+                    <img src="assets/tentLogo.png" class="titleitem">
+                    <h1 class="titleitem">Campden</h1>
+                </div>
+    
+                <div class="navbar">
+                    <a href="#home" class="navmenu" data-replace="Home"><span>Home</span></a>
+                    <a href="#catalog" class="navmenu" data-replace="Products"><span>Products</span></a>
+                    <a href="" class="navmenu" data-replace="Reviews"><span>Reviews</span></a>
+                    <a href="" class="navmenu" data-replace="About"><span>About</span></a>
+                </div>
+    
+                <div class="login">
+                    <a href="#home" class="navbutton">Login</a>
+                    <a href="#home" class="navbutton">Register</a>
+                </div>
+            </nav>
+        </div>
 
         <div class="startcontainer">
             <section class="getstarted">
@@ -43,7 +45,7 @@
                 </div>
             </section>
         </div>
-    </div>
+    </section>
 
     <section id="catalog">
         <div class="ctitle">
@@ -64,7 +66,7 @@
         <section class="ccards">
             <div class="crow">
                 <div class="cpaging">
-                    <a href="">
+                    <a href="#catalog">
                         <i class="fa-solid fa-circle-arrow-left"></i>
                     </a>
                 </div>
@@ -123,16 +125,26 @@
                 </div>
 
                 <div class="cpaging">
-                    <a href="">
+                    <a href="#catalog">
                         <i class="fa-solid fa-circle-arrow-right"></i>
                     </a>
                 </div>
             </div>
         </section>
-
-        <div class="cmore">
-            
-        </div>
     </section>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.backgroundColor = "rgba(10, 17, 38, 0.4)";
+                document.getElementById("navbar").style.minHeight = "4rem";
+            } else {
+                document.getElementById("navbar").style.backgroundColor = "transparent";
+                document.getElementById("navbar").style.minHeight = "6.4rem";
+            }
+        }
+    </script>
 </body>
 </html>

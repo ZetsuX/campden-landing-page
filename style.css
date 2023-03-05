@@ -2,23 +2,30 @@
     margin: 0;
     padding: 0;
     font-family: "Ubuntu", sans-serif;
+    scroll-behavior: smooth;    
 }
 
-div.herosection {
+#home {
     background-image: url('assets/darkbg.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+#navbar {
+    position: fixed;
+    width: 100%;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 6rem;
+    min-height: 6.4rem;
     color: rgba(255, 255, 255, 0.9);
     position: absolute;
-    width: 100%
+    width: 100%;
+    transition: background-color 0.4s, min-height 0.4s;
 }
 
 nav .title {
@@ -100,8 +107,8 @@ nav .navbutton {
     display: inline;
     font-size: 110%;
     border-radius: 5px;
-    background-color: rgba(78, 96, 116, 0.3);
-    padding: 0.85rem;
+    background-color: rgba(45, 73, 136, 0.3);
+    padding: 0.8rem;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.9);
     font-weight: bold;
@@ -198,8 +205,9 @@ nav .navbutton:hover {
 #catalog .ctitle {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 15%;
+    align-items: last baseline;
+    min-height: 17.5%;
+    margin-bottom: 2rem;
 }
 
 .ctitle-text {
@@ -211,11 +219,12 @@ nav .navbutton:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1.5rem;
+    align-items: last baseline;
+    margin-bottom: 1.2rem;
 }
 
 .cnav-btn {
-    margin: 0.8rem;
+    margin: 0 0.4rem;
     padding: 0.5rem;
     text-decoration: none;
     color: rgb(10, 17, 38);
@@ -243,7 +252,7 @@ nav .navbutton:hover {
 }
 
 #catalog .ccards {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
