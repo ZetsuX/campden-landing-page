@@ -465,6 +465,7 @@ nav .navbutton:hover {
     height: 100vh;
     background-color: RGB(218, 218, 218);
     display: block;
+    padding-bottom: 3rem;
 }
 
 .aboutus {
